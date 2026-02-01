@@ -1,6 +1,59 @@
 # Data Structures & Algorithms - Complete Learning Path
 
-A comprehensive, structured repository for mastering DSA with Python. This guide focuses on practical knowledge needed for software engineering interviews and real-world problem-solving.
+A comprehensive, structured repository for mastering DSA with **Python** and **Ruby**. This guide focuses on practical knowledge needed for software engineering interviews and real-world problem-solving.
+
+## Language Support
+
+All topics are implemented in both **Python** and **Ruby**, allowing you to:
+- Learn DSA concepts in your preferred language
+- Compare implementations across languages
+- Practice with the language used in your interviews
+- Understand how the same algorithm works in different paradigms
+
+### File Organization
+
+Files are organized side-by-side in the same directories:
+```
+01_foundations/01_big_o_notation/
+├── theory.md              # Language-agnostic concepts
+├── demonstrations.py      # Python examples
+├── demonstrations.rb      # Ruby examples
+├── exercises.py           # Python practice problems
+├── exercises.rb           # Ruby practice problems
+├── solutions.py           # Python solutions
+└── solutions.rb           # Ruby solutions
+```
+
+### Choosing a Language
+
+**Choose Python if:**
+- You're interviewing at companies that prefer Python
+- You want maximum library support for algorithms
+- You prefer explicit, readable syntax
+- You're already familiar with Python
+
+**Choose Ruby if:**
+- You're interviewing at companies that use Ruby (Rails shops, etc.)
+- You appreciate expressive, elegant syntax
+- You want to leverage powerful enumerable methods
+- You're already familiar with Ruby
+
+**Use Both if:**
+- You want to deepen your understanding by comparing approaches
+- You're learning DSA for the first time (comparing helps solidify concepts)
+- You want to be language-agnostic in your problem-solving skills
+
+### Ruby-Specific Features Used
+
+The Ruby implementations leverage idiomatic Ruby:
+- **Blocks and Enumerables**: `.each`, `.map`, `.select`, `.reduce`
+- **Hash and Set**: `Hash.new(0)`, `Set.new`, set operations
+- **Array Methods**: `.push`, `.pop`, `.shift`, `.unshift`, `.first`, `.last`
+- **Predicate Methods**: Methods ending in `?` for boolean returns
+- **Safe Navigation**: `&.` operator for nil-safe method chaining
+- **Range Syntax**: `(0...n)` and `(0..n)`
+- **Symbols**: Used for hash keys where appropriate
+- **Duck Typing**: Ruby's dynamic nature for flexible implementations
 
 ## Learning Path Overview
 
@@ -13,10 +66,10 @@ Foundations → Core Data Structures → Essential Algorithms → Dynamic Progra
 ## How to Use This Repository
 
 1. **Read Theory First**: Each topic has a `theory.md` file - start here
-2. **Study Demonstrations**: Review `demonstrations.py` to see concepts in action
-3. **Practice Exercises**: Implement solutions in `exercises.py`
-4. **Check Solutions**: Compare with `solutions.py` after attempting
-5. **Run Tests**: Validate your implementations with `pytest`
+2. **Study Demonstrations**: Review `demonstrations.py` or `demonstrations.rb` to see concepts in action
+3. **Practice Exercises**: Implement solutions in `exercises.py` or `exercises.rb`
+4. **Check Solutions**: Compare with `solutions.py` or `solutions.rb` after attempting
+5. **Run Tests**: Validate your implementations with `pytest` (Python) or `rspec` (Ruby)
 
 ## Progress Tracker
 
@@ -76,16 +129,29 @@ DSA/
 
 ## Setup
 
+### Python Setup
 ```bash
 # Clone the repository
 git clone git@github.com:santiagodimeo/DSA.git
 cd DSA
 
-# Install dependencies
+# Install Python dependencies
 pip install -r requirements.txt
 
-# Run tests
+# Run Python tests
 pytest
+```
+
+### Ruby Setup
+```bash
+# Install Ruby dependencies
+bundle install
+
+# Run Ruby tests
+rspec
+
+# Run tests with coverage
+rspec --format documentation
 ```
 
 ## Study Schedule Template
